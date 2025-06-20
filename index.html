@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Room</title>
+    <title>SmartBlocks Homes - Virtual Data Room</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,14 +11,18 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>DATA ROOM</h2>
+                <h2>SMARTBLOCKS HOMES</h2>
+                <span class="data-room-badge">Virtual Data Room</span>
             </div>
             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#overview" class="nav-link">Overview</a>
+                </li>
                 <li class="nav-item">
                     <a href="#documents" class="nav-link">Documents</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#analytics" class="nav-link">Analytics</a>
+                    <a href="#financials" class="nav-link">Financials</a>
                 </li>
                 <li class="nav-item">
                     <a href="#team" class="nav-link">Team</a>
@@ -31,57 +35,176 @@
     </nav>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="overview">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">
-                        find your <span class="highlight">data insights</span>
+                        Welcome to our <span class="highlight">Virtual Data Room</span>
                     </h1>
                     <p class="hero-subtitle">
-                        Secure, AI-powered data room with comprehensive analytics and document management.
+                        Secure access to SmartBlocks Homes investment materials, financial data, and due diligence documents.
                     </p>
-                    <div class="hero-features">
-                        <div class="feature-item">
-                            <h3>Secure Access</h3>
-                            <p>Enterprise-grade security with role-based permissions</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>$2.5M</h3>
+                            <p>Funding Round</p>
                         </div>
-                        <div class="feature-item">
-                            <h3>Real-time Analytics</h3>
-                            <p>Advanced insights and reporting capabilities</p>
+                        <div class="stat-item">
+                            <h3>1,000+</h3>
+                            <p>Homes/Month Capacity</p>
                         </div>
-                        <div class="feature-item">
-                            <h3>Document Management</h3>
-                            <p>Organized, searchable document repository</p>
+                        <div class="stat-item">
+                            <h3>5 Days</h3>
+                            <p>Move-in Ready</p>
                         </div>
                     </div>
-                    <button class="cta-button">Access Data Room</button>
+                    <div class="cta-buttons">
+                        <button class="cta-button primary" onclick="scrollToSection('documents')">View Pitch Deck</button>
+                        <button class="cta-button secondary" onclick="scrollToSection('financials')">Financial Data</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="features" id="documents">
+        <section class="documents-section" id="documents">
             <div class="container">
-                <h2 class="section-title">What we Offer</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Advanced Analytics</h3>
-                        <p>Comprehensive data visualization and reporting tools</p>
+                <h2 class="section-title">Investment Documents</h2>
+                <div class="documents-grid">
+                    <div class="doc-category">
+                        <div class="category-icon">📊</div>
+                        <h3>Pitch Deck & Business Plan</h3>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <span class="doc-name">SmartBlocks_Pitch_Deck_2024.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Business_Plan_Executive_Summary.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Market_Analysis_Report.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
-                        <h3>Secure Storage</h3>
-                        <p>Bank-level security with encrypted document storage</p>
+
+                    <div class="doc-category">
+                        <div class="category-icon">🎥</div>
+                        <h3>Product Demo & Videos</h3>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <span class="doc-name">Product_Demo_Video.mp4</span>
+                                <button class="view-btn">Watch</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Assembly_Process_Timelapse.mp4</span>
+                                <button class="view-btn">Watch</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Customer_Testimonials.mp4</span>
+                                <button class="view-btn">Watch</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🤖</div>
-                        <h3>AI-Powered Insights</h3>
-                        <p>Machine learning algorithms for data analysis</p>
+
+                    <div class="doc-category">
+                        <div class="category-icon">⚖️</div>
+                        <h3>Legal Documents</h3>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <span class="doc-name">Articles_of_Incorporation.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">IP_Patent_Portfolio.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Regulatory_Compliance.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Fast Performance</h3>
-                        <p>Lightning-fast document access and processing</p>
+
+                    <div class="doc-category">
+                        <div class="category-icon">🏗️</div>
+                        <h3>Technical & Operations</h3>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <span class="doc-name">Technical_Specifications.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Manufacturing_Process.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Supply_Chain_Analysis.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="financials-section" id="financials">
+            <div class="container">
+                <h2 class="section-title">Financial Information</h2>
+                <div class="financial-grid">
+                    <div class="financial-card">
+                        <h3>Financial Statements</h3>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <span class="doc-name">Financial_Statements_2024.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Cash_Flow_Projection.xlsx</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Revenue_Model.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="financial-card">
+                        <h3>Key Metrics</h3>
+                        <div class="metrics-display">
+                            <div class="metric">
+                                <span class="metric-value">$15M</span>
+                                <span class="metric-label">Projected Revenue Y3</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">45%</span>
+                                <span class="metric-label">Gross Margin</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">$50K</span>
+                                <span class="metric-label">Average Home Price</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="financial-card">
+                        <h3>Due Diligence</h3>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <span class="doc-name">Audited_Financials_2023.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Cap_Table.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="doc-item">
+                                <span class="doc-name">Use_of_Funds.pdf</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,25 +212,35 @@
 
         <section class="team" id="team">
             <div class="container">
-                <h2 class="section-title">Our Team</h2>
+                <h2 class="section-title">Leadership Team</h2>
                 <div class="team-grid">
                     <div class="team-member">
                         <div class="member-avatar"></div>
-                        <h3>John Smith</h3>
-                        <p class="member-role">CEO & Founder</p>
-                        <p class="member-bio">15+ years in data analytics and enterprise solutions</p>
+                        <h3>Sergii Vlashchenko</h3>
+                        <p class="member-role">Co-Founder, CEO</p>
+                        <p class="member-bio">10+ years in smart city projects for 12 million users</p>
+                        <a href="#" class="linkedin-link">LinkedIn Profile</a>
                     </div>
                     <div class="team-member">
                         <div class="member-avatar"></div>
-                        <h3>Sarah Johnson</h3>
-                        <p class="member-role">CTO</p>
-                        <p class="member-bio">20+ years in software development and AI</p>
+                        <h3>Igor Kolosiuk</h3>
+                        <p class="member-role">Founder, CTO</p>
+                        <p class="member-bio">20+ years in manufacturing and Software Development. Over $1B of turnover in previous project</p>
+                        <a href="#" class="linkedin-link">LinkedIn Profile</a>
                     </div>
                     <div class="team-member">
                         <div class="member-avatar"></div>
-                        <h3>Michael Chen</h3>
-                        <p class="member-role">Head of Security</p>
-                        <p class="member-bio">12+ years in cybersecurity and data protection</p>
+                        <h3>Eugene Semenchenko</h3>
+                        <p class="member-role">Co-Founder, Director of Process Engineering</p>
+                        <p class="member-bio">18+ years of experience, project management at TetraPak</p>
+                        <a href="#" class="linkedin-link">LinkedIn Profile</a>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"></div>
+                        <h3>Julia Semenchenko</h3>
+                        <p class="member-role">Co-Founder, Senior Supply Chain and Operations Director</p>
+                        <p class="member-bio">18+ years in c-level management of Procter&Gamble</p>
+                        <a href="#" class="linkedin-link">LinkedIn Profile</a>
                     </div>
                 </div>
             </div>
@@ -115,21 +248,34 @@
 
         <section class="contact" id="contact">
             <div class="container">
-                <h2 class="section-title">Let's shape the future together</h2>
+                <h2 class="section-title">Investor Relations</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>Start with Us</h3>
-                        <p>Ready to revolutionize your data management?</p>
+                        <h3>Get in Touch</h3>
+                        <p>Questions about our investment opportunity? We're here to help.</p>
                         <div class="contact-details">
-                            <p>📧 info@dataroom.com</p>
-                            <p>🔗 LinkedIn</p>
-                            <p>📱 Instagram</p>
+                            <p>📧 investors@smartblocks.homes</p>
+                            <p>📞 +1 (555) 123-4567</p>
+                            <p>🔗 LinkedIn: SmartBlocks Homes</p>
+                            <p>📍 San Francisco, CA</p>
+                        </div>
+                        <div class="nda-notice">
+                            <p><strong>Confidentiality Notice:</strong> All materials in this data room are confidential and proprietary. By accessing this information, you agree to maintain strict confidentiality.</p>
                         </div>
                     </div>
                     <form class="contact-form">
                         <input type="text" placeholder="Your Name" required>
                         <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <input type="text" placeholder="Organization" required>
+                        <select required>
+                            <option value="">Investor Type</option>
+                            <option value="vc">Venture Capital</option>
+                            <option value="pe">Private Equity</option>
+                            <option value="angel">Angel Investor</option>
+                            <option value="strategic">Strategic Investor</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
@@ -139,7 +285,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Data Room. All rights reserved.</p>
+            <p>&copy; 2024 SmartBlocks Homes. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Use</a></p>
         </div>
     </footer>
 
